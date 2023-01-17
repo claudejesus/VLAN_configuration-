@@ -1,0 +1,775 @@
+Connected to Dynamips VM "R1" (ID 1, type c3600) - Console port
+Press ENTER to get the prompt.
+Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3600 Software (C3640-JSX-M), Version 12.4(19), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Fri 29-Feb-08 22:36 by prod_rel_team
+
+Cisco 3640 (R4700) processor (revision 0xFF) with 187392K/9216K bytes of memory.
+Processor board ID FF1045C5
+R4700 CPU at 100MHz, Implementation 33, Rev 1.2
+4 Ethernet interfaces
+2 FastEthernet interfaces
+4 Serial interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+253K bytes of NVRAM.
+8192K bytes of processor board System flash (Read/Write)
+
+SETUP: new interface FastEthernet0/0 placed in "shutdown" state
+SETUP: new interface FastEthernet1/0 placed in "shutdown" state
+SETUP: new interface Ethernet2/0 placed in "shutdown" state
+SETUP: new interface Ethernet2/1 placed in "shutdown" state
+SETUP: new interface Ethernet2/2 placed in "shutdown" state
+SETUP: new interface Ethernet2/3 placed in "shutdown" state
+SETUP: new interface Serial3/0 placed in "shutdown" state
+SETUP: new interface Serial3/1 placed in "shutdown" state
+SETUP: new interface Serial3/2 placed in "shutdown" state
+SETUP: new interface Serial3/3 placed in "shutdown" state
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:02.327: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:02.427: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:02.535: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3600 Software (C3640-JSX-M), Version 12.4(19), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2008 by Cisco Systems, Inc.
+Compiled Fri 29-Feb-08 22:36 by prod_rel_team
+*Mar  1 00:00:02.535: %SNMP-5-COLDSTART: SNMP agent on host R1 is undergoing a cold start
+*Mar  1 00:00:03.351: %LINK-5-CHANGED: Interface FastEthernet0/0, changed state to administratively down
+*Mar  1 00:00:03.387: %LINK-5-CHANGED: Interface FastEthernet1/0, changed state to administratively down
+*Mar  1 00:00:03.387: %LINK-5-CHANGED: Interface Ethernet2/0, changed state to administratively down
+*Mar  1 00:00:03.391: %LINK-5-CHANGED: Interface Ethernet2/1, changed state to administratively down
+*Mar  1 00:00:03.403: %LINK-5-CHANGED: Interface Ethernet2/2, changed state to administratively down
+*Mar  1 00:00:03.403: %LINK-5-CHANGED: Interface Ethernet2/3, changed state to administratively down
+*Mar  1 00:00:03.415: %LINK-5-CHANGED: Interface Serial3/0, changed state to administratively down
+*Mar  1 00:00:03.415: %LINK-5-CHANGED: Interface Serial3/1, changed state to administratively down
+*Mar  1 00:00:03.419: %LINK-5-CHANGED: Interface Serial3/2, changed state to administratively down
+*Mar  1 00:00:03.419: %LINK-5-CHANGED: Interface Serial3/3, changed state to administratively down
+*Mar  1 00:00:04.351: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to down
+*Mar  1 00:00:04.387: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet1/0, changed state to down
+*Mar  1 00:00:04.387: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/0, changed state to down
+*Mar  1 00:00:04.391: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/1, changed state to down
+*Mar  1 00:00:04.403: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/2, changed state to down
+*Mar  1 00:00:04.403: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet2/3, changed state to down
+*Mar  1 00:00:04.415: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/0, changed state to down
+*Mar  1 00:00:04.415: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/1, changed state to down
+*Mar  1 00:00:04.419: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/2, changed state to down
+*Mar  1 00:00:04.419: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/3, changed state to down
+R1#
+R1#
+R1#
+R1#ena
+R1#
+R1#config ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+R1(config)#enable secret class
+R1(config)#line con 0
+R1(config-line)#
+R1(config-line)#logging sy
+R1(config-line)#logging synchronous
+R1(config-line)#line vt
+R1(config-line)#line vty 0 4
+R1(config-line)#pass
+R1(config-line)#password cisco
+R1(config-line)#
+R1(config-line)#login
+R1(config-line)#do wr
+Building configuration...
+[OK]
+R1(config-line)#
+R1(config-line)#
+R1(config-line)#
+R1(config-line)#exi
+R1(config)#
+R1(config)#interface fa0/0
+R1(config-if)#no shut
+R1(config-if)#
+R1(config-if)#
+*Mar  1 02:59:39.563: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Mar  1 02:59:40.563: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+R1(config-if)#int
+R1(config-if)#inter
+R1(config-if)#exi
+R1(config)#interface fa0/0.10
+R1(config-subif)#de
+R1(config-subif)#desc
+R1(config-subif)#description Office vlan 10
+R1(config-subif)#enc
+R1(config-subif)#encapsulation do
+R1(config-subif)#encapsulation dot1Q
+% Incomplete command.
+
+R1(config-subif)#encapsulation dot1Q 10
+R1(config-subif)#ip address 10.1.10.1 255.255.255.0
+R1(config-subif)#exit
+R1(config)#interf
+R1(config)#interface fa0/0.20
+R1(config-subif)#des
+R1(config-subif)#description ser
+R1(config-subif)#description server vlan 20
+R1(config-subif)#enc
+R1(config-subif)#encapsulation do
+R1(config-subif)#encapsulation dot1Q 20
+R1(config-subif)#ip add
+R1(config-subif)#ip address 10.1.20.1 255.255.255.0
+R1(config-subif)#do wr
+Building configuration...
+[OK]
+R1(config-subif)#
+R1(config-subif)#exi
+R1(config)#interfac
+R1(config)#interface fa0/0.99
+R1(config-subif)#des
+R1(config-subif)#description management vlan 99
+R1(config-subif)#enc
+R1(config-subif)#encapsulation do
+R1(config-subif)#encapsulation dot1Q 99
+R1(config-subif)#ip add
+R1(config-subif)#ip address 10.1.99.1 255.255.255.0
+R1(config-subif)#do wr
+Building configuration...
+[OK]
+R1(config-subif)#
+R1(config-subif)#exit
+R1(config)#exit
+R1#
+*Mar  1 03:08:32.551: %SYS-5-CONFIG_I: Configured from console by console
+R1#show ip interface brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES unset  up                    up  
+FastEthernet0/0.10         10.1.10.1       YES manual up                    up  
+FastEthernet0/0.20         10.1.20.1       YES manual up                    up  
+FastEthernet0/0.99         10.1.99.1       YES manual up                    up  
+FastEthernet1/0            unassigned      YES unset  administratively down down
+Ethernet2/0                unassigned      YES unset  administratively down down
+Ethernet2/1                unassigned      YES unset  administratively down down
+Ethernet2/2                unassigned      YES unset  administratively down down
+Ethernet2/3                unassigned      YES unset  administratively down down
+Serial3/0                  unassigned      YES unset  administratively down down
+Serial3/1                  unassigned      YES unset  administratively down down
+Serial3/2                  unassigned      YES unset  administratively down down
+Serial3/3                  unassigned      YES unset  administratively down down
+R1#
+R1#show vlan
+% Ambiguous command:  "show vlan"
+R1#show vlans
+
+Virtual LAN ID:  1 (IEEE 802.1Q Encapsulation)
+
+   vLAN Trunk Interface:   FastEthernet0/0
+
+ This is configured as native Vlan for the following interface(s) :
+FastEthernet0/0
+
+   Protocols Configured:   Address:              Received:        Transmitted:
+        Other                                           0                  62
+
+   581 packets, 41887 bytes input
+   62 packets, 4153 bytes output
+
+Virtual LAN ID:  10 (IEEE 802.1Q Encapsulation)
+
+   vLAN Trunk Interface:   FastEthernet0/0.10
+
+   Protocols Configured:   Address:              Received:        Transmitted:
+           IP              10.1.10.1                    0                   0
+
+   258 packets, 17544 bytes input
+   0 packets, 0 bytes output
+
+Virtual LAN ID:  20 (IEEE 802.1Q Encapsulation)
+
+   vLAN Trunk Interface:   FastEthernet0/0.20
+
+   Protocols Configured:   Address:              Received:        Transmitted:
+           IP              10.1.20.1                    0                   0
+
+   185 packets, 12580 bytes input
+   0 packets, 0 bytes output
+
+Virtual LAN ID:  99 (IEEE 802.1Q Encapsulation)
+
+   vLAN Trunk Interface:   FastEthernet0/0.99
+
+   Protocols Configured:   Address:              Received:        Transmitted:
+           IP              10.1.99.1                    0                   0
+
+   85 packets, 5780 bytes input
+   0 packets, 0 bytes output
+
+R1#
+R1#config
+Configuring from terminal, memory, or network [terminal]?
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#inter
+R1(config)#interface s3/2
+R1(config-if)#ip address 10.1.1.1 255.255.255.0
+R1(config-if)#no shut
+R1(config-if)#
+R1(config-if)#
+*Mar  1 03:13:22.103: %LINK-3-UPDOWN: Interface Serial3/2, changed state to up
+R1(config-if)#
+*Mar  1 03:13:23.107: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/2, changed state to up
+R1(config-if)#do wr
+Building configuration...
+[OK]
+R1(config-if)#
+R1(config-if)#ex
+R1(config)#
+R1(config)#router eigrp 1
+R1(config-router)#
+*Mar  1 03:13:53.031: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/2, changed state to down
+R1(config-router)#network 10.0.0.0
+R1(config-router)#do wr
+Building configuration...
+[OK]
+R1(config-router)#
+R1(config-router)#end
+R1#
+R1#
+*Mar  1 03:17:13.535: %SYS-5-CONFIG_I: Configured from console by console
+R1#sh ip eigrp neighborrs
+                       ^
+% Invalid input detected at '^' marker.
+
+R1#sh ip eigrp neighbors
+IP-EIGRP neighbors for process 1
+R1#sh ip eigrp neighbor
+IP-EIGRP neighbors for process 1
+R1#show ip route ?
+  Hostname or A.B.C.D  Network to display information about or hostname
+  bgp                  Border Gateway Protocol (BGP)
+  connected            Connected
+  dhcp                 Show routes added by DHCP Server or Relay
+  eigrp                Enhanced Interior Gateway Routing Protocol (EIGRP)
+  isis                 ISO IS-IS
+  list                 IP Access list
+  mobile               Mobile routes
+  odr                  On Demand stub Routes
+  ospf                 Open Shortest Path First (OSPF)
+  profile              IP routing table profile
+  rip                  Routing Information Protocol (RIP)
+  static               Static routes
+  summary              Summary of all routes
+  supernets-only       Show supernet entries only
+  track-table          Tracked static table
+  update-queue         Queue of RIB updates
+  vrf                  Display routes from a VPN Routing/Forwarding instance
+  |                    Output modifiers
+  <cr>
+
+R1#show ip route | begin gateway
+R1#
+R1#show ip route | begin Gateway
+Gateway of last resort is not set
+
+     10.0.0.0/24 is subnetted, 3 subnets
+C       10.1.10.0 is directly connected, FastEthernet0/0.10
+C       10.1.20.0 is directly connected, FastEthernet0/0.20
+C       10.1.99.0 is directly connected, FastEthernet0/0.99
+R1#
+R1#confi
+Configuring from terminal, memory, or network [terminal]?
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#inter
+R1(config)#interface fa0/0.10
+R1(config-subif)#glbp 10 ip 10.1.10.254
+R1(config-subif)#glbp 10 priority 150
+R1(config-subif)#glbp
+*Mar  1 03:26:01.803: %GLBP-6-STATECHANGE: FastEthernet0/0.10 Grp 10 state Standby -> Active
+R1(config-subif)#glbp 10
+*Mar  1 03:26:11.803: %GLBP-6-FWDSTATECHANGE: FastEthernet0/0.10 Grp 10 Fwd 1 state Listen -> Active
+R1(config-subif)#glbp 10 preempt
+R1(config-subif)#exi
+R1(config)#inter
+R1(config)#interface fa0/0.20
+R1(config-subif)#glbp 20 ip 10.1.20.254
+R1(config-subif)#glbp 20 priority 150
+R1(config-subif)#glbp 10 preempt
+*Mar  1 03:27:49.679: %GLBP-6-STATECHANGE: FastEthernet0/0.20 Grp 20 state Standby -> Active
+R1(config-subif)#exi
+*Mar  1 03:27:59.679: %GLBP-6-FWDSTATECHANGE: FastEthernet0/0.20 Grp 20 Fwd 1 state Listen -> Active
+R1(config-subif)#glbp 20 preempt
+R1(config-subif)#
+R1(config-subif)#
+R1(config-subif)#ex
+R1(config)#interface fa0/0.99
+R1(config-subif)#glbp 99 ip 10.1.99.254
+R1(config-subif)#glbp 99 priority 1
+*Mar  1 03:29:27.179: %GLBP-6-STATECHANGE: FastEthernet0/0.99 Grp 99 state Standby -> Active
+R1(config-subif)#glbp 99 priority 150
+R1(config-subif)#
+*Mar  1 03:29:37.179: %GLBP-6-FWDSTATECHANGE: FastEthernet0/0.99 Grp 99 Fwd 1 state Listen -> Active
+R1(config-subif)#glbp 99 preempt
+R1(config-subif)#do wr
+Building configuration...
+[OK]
+R1(config-subif)#
+R1(config-subif)#end
+R1#
+R1#
+*Mar  1 03:30:28.207: %SYS-5-CONFIG_I: Configured from console by console
+R1#Show int fa0/0 | i bia
+  Hardware is AmdFE, address is cc01.1280.0000 (bia cc01.1280.0000)
+R1#show glbp
+FastEthernet0/0.10 - Group 10
+  State is Active
+    2 state changes, last state change 00:05:34
+  Virtual IP address is 10.1.10.254
+  Hello time 3 sec, hold time 10 sec
+    Next hello sent in 1.224 secs
+  Redirect time 600 sec, forwarder time-out 14400 sec
+  Preemption enabled, min delay 0 sec
+  Active is local
+  Standby is unknown
+  Priority 150 (configured)
+  Weighting 100 (default 100), thresholds: lower 1, upper 100
+  Load balancing: round-robin
+  Group members:
+    cc01.1280.0000 (10.1.10.1) local
+  There is 1 forwarder (1 active)
+  Forwarder 1
+    State is Active
+      1 state change, last state change 00:05:24
+    MAC address is 0007.b400.0a01 (default)
+    Owner ID is cc01.1280.0000
+    Redirection enabled
+    Preemption enabled, min delay 30 sec
+    Active is local, weighting 100
+FastEthernet0/0.20 - Group 20
+  State is Active
+    2 state changes, last state change 00:04:25
+  Virtual IP address is 10.1.20.254
+  Hello time 3 sec, hold time 10 sec
+    Next hello sent in 1.980 secs
+  Redirect time 600 sec, forwarder time-out 14400 sec
+  Preemption enabled, min delay 0 sec
+  Active is local
+  Standby is unknown
+  Priority 150 (configured)
+  Weighting 100 (default 100), thresholds: lower 1, upper 100
+  Load balancing: round-robin
+  Group members:
+    cc01.1280.0000 (10.1.20.1) local
+  There is 1 forwarder (1 active)
+  Forwarder 1
+    State is Active
+      1 state change, last state change 00:04:38
+    MAC address is 0007.b400.1401 (default)
+    Owner ID is cc01.1280.0000
+    Redirection enabled
+    Preemption enabled, min delay 30 sec
+    Active is local, weighting 100
+FastEthernet0/0.99 - Group 99
+  State is Active
+    2 state changes, last state change 00:03:12
+  Virtual IP address is 10.1.99.254
+  Hello time 3 sec, hold time 10 sec
+    Next hello sent in 2.084 secs
+  Redirect time 600 sec, forwarder time-out 14400 sec
+  Preemption enabled, min delay 0 sec
+  Active is local
+  Standby is unknown
+  Priority 150 (configured)
+  Weighting 100 (default 100), thresholds: lower 1, upper 100
+  Load balancing: round-robin
+  Group members:
+    cc01.1280.0000 (10.1.99.1) local
+  There is 1 forwarder (1 active)
+  Forwarder 1
+    State is Active
+      1 state change, last state change 00:03:03
+    MAC address is 0007.b400.6301 (default)
+    Owner ID is cc01.1280.0000
+    Redirection enabled
+    Preemption enabled, min delay 30 sec
+    Active is local, weighting 100
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#show glbp brief
+Interface   Grp  Fwd Pri State    Address         Active router   Standby router
+Fa0/0.10    10   -   150 Active   10.1.10.254     local           unknown
+Fa0/0.10    10   1   -   Active   0007.b400.0a01  local           -
+Fa0/0.20    20   -   150 Active   10.1.20.254     local           unknown
+Fa0/0.20    20   1   -   Active   0007.b400.1401  local           -
+Fa0/0.99    99   -   150 Active   10.1.99.254     local           unknown
+Fa0/0.99    99   1   -   Active   0007.b400.6301  local           -
+R1#
+R1#config
+Configuring from terminal, memory, or network [terminal]?
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#track 15 interface s3/2 line
+R1(config)#track 15 interface s3/2 line-protocol
+R1(config-track)#do wr
+Building configuration...
+[OK]
+R1(config-track)#
+R1(config-track)#
+R1(config-track)#exi
+R1(config)#inter
+R1(config)#interface fa0/0.10
+R1(config-subif)#glbp 10 weighting 110 lower 85 upper 105
+R1(config-subif)#glbp 10 weighting track 15 dec
+R1(config-subif)#glbp 10 weighting track 15 decrement 30
+R1(config-subif)#ex
+R1(config)#int s3/2
+R1(config-if)#shutdown
+R1(config-if)#
+R1(config-if)#
+*Mar  1 03:40:34.155: %LINK-5-CHANGED: Interface Serial3/2, changed state to administratively down
+R1(config-if)#ex
+R1(config)#ex
+% Ambiguous command:  "ex"
+R1(config)#exi
+R1#
+*Mar  1 03:40:56.743: %SYS-5-CONFIG_I: Configured from console by console
+R1#Show glbp
+FastEthernet0/0.10 - Group 10
+  State is Active
+    2 state changes, last state change 00:15:05
+  Virtual IP address is 10.1.10.254
+  Hello time 3 sec, hold time 10 sec
+    Next hello sent in 0.892 secs
+  Redirect time 600 sec, forwarder time-out 14400 sec
+  Preemption enabled, min delay 0 sec
+  Active is local
+  Standby is unknown
+  Priority 150 (configured)
+  Weighting 80, low (configured 110), thresholds: lower 85, upper 105
+    Track object 15 state Down decrement 30
+  Load balancing: round-robin
+  Group members:
+    cc01.1280.0000 (10.1.10.1) local
+  There is 1 forwarder (1 active)
+  Forwarder 1
+    State is Active
+      1 state change, last state change 00:14:55
+    MAC address is 0007.b400.0a01 (default)
+    Owner ID is cc01.1280.0000
+    Redirection enabled
+    Preemption enabled, min delay 30 sec
+    Active is local, weighting 80
+FastEthernet0/0.20 - Group 20
+  State is Active
+    2 state changes, last state change 00:13:20
+  Virtual IP address is 10.1.20.254
+  Hello time 3 sec, hold time 10 sec
+    Next hello sent in 0.704 secs
+  Redirect time 600 sec, forwarder time-out 14400 sec
+  Preemption enabled, min delay 0 sec
+  Active is local
+  Standby is unknown
+  Priority 150 (configured)
+  Weighting 100 (default 100), thresholds: lower 1, upper 100
+  Load balancing: round-robin
+  Group members:
+    cc01.1280.0000 (10.1.20.1) local
+  There is 1 forwarder (1 active)
+  Forwarder 1
+    State is Active
+      1 state change, last state change 00:13:10
+    MAC address is 0007.b400.1401 (default)
+    Owner ID is cc01.1280.0000
+    Redirection enabled
+    Preemption enabled, min delay 30 sec
+    Active is local, weighting 100
+FastEthernet0/0.99 - Group 99
+  State is Active
+    2 state changes, last state change 00:11:43
+  Virtual IP address is 10.1.99.254
+  Hello time 3 sec, hold time 10 sec
+    Next hello sent in 1.480 secs
+  Redirect time 600 sec, forwarder time-out 14400 sec
+  Preemption enabled, min delay 0 sec
+  Active is local
+  Standby is unknown
+  Priority 150 (configured)
+  Weighting 100 (default 100), thresholds: lower 1, upper 100
+  Load balancing: round-robin
+  Group members:
+    cc01.1280.0000 (10.1.99.1) local
+  There is 1 forwarder (1 active)
+  Forwarder 1
+    State is Active
+      1 state change, last state change 00:11:35
+    MAC address is 0007.b400.6301 (default)
+    Owner ID is cc01.1280.0000
+    Redirection enabled
+    Preemption enabled, min delay 30 sec
+    Active is local, weighting 100
+R1#config
+Configuring from terminal, memory, or network [terminal]?
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int s3/2
+R1(config-if)#no shutdown
+R1(config-if)#
+*Mar  1 03:42:26.139: %LINK-3-UPDOWN: Interface Serial3/2, changed state to up
+R1(config-if)#
+R1(config-if)#
+*Mar  1 03:42:26.143: %TRACKING-5-STATE: 15 interface Se3/2 line-protocol Down->Up
+*Mar  1 03:42:27.143: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/2, changed state to up
+R1(config-if)#
+*Mar  1 03:42:52.483: %TRACKING-5-STATE: 15 interface Se3/2 line-protocol Up->Down
+*Mar  1 03:42:53.035: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/2, changed state to down
+R1(config-if)#ex
+R1(config)#inter
+R1(config)#interface fa0/0.10
+R1(config-subif)#glbp 10 auth
+R1(config-subif)#glbp 10 authentication md
+R1(config-subif)#glbp 10 authentication md5 key
+R1(config-subif)#glbp 10 authentication md5 key-str
+R1(config-subif)#glbp 10 authentication md5 key-string cisco123
+R1(config-subif)#interface fa0/0.20
+R1(config-subif)#glbp 20 authentication md5 key-string cisco123
+R1(config-subif)#interface fa0/0.99
+R1(config-subif)#glbp 99 authentication md5 key-string cisco123
+R1(config-subif)#
+R1(config-subif)#dow
+                  ^
+% Invalid input detected at '^' marker.
+
+R1(config-subif)#
+R1(config-subif)#do wr
+Building configuration...
+[OK]
+R1(config-subif)#
+R1(config-subif)#end
+R1#
+*Mar  1 03:46:10.687: %SYS-5-CONFIG_I: Configured from console by console
+R1#Shwo run brief | execlude
+     ^
+% Invalid input detected at '^' marker.
+
+R1#Show run brief | execlude
+                      ^
+% Invalid input detected at '^' marker.
+
+R1#Show run brief | exclude
+% Incomplete command.
+
+R1#Show run brief | exclude !
+Building configuration...
+
+Current configuration : 2266 bytes
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+hostname R1
+boot-start-marker
+boot-end-marker
+enable secret 5 $1$M0oO$7OA2yUdC3dZgK.slfPXDp.
+no aaa new-model
+memory-size iomem 5
+no ip icmp rate-limit unreachable
+ip cef
+no ip domain lookup
+ip tcp synwait-time 5
+track 15 interface Serial3/2 line-protocol
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+interface FastEthernet0/0.10
+ description Office vlan 10
+ encapsulation dot1Q 10
+ ip address 10.1.10.1 255.255.255.0
+ glbp 10 ip 10.1.10.254
+ glbp 10 priority 150
+ glbp 10 preempt
+ glbp 10 weighting 110 lower 85 upper 105
+ glbp 10 authentication md5 key-string cisco123
+ glbp 10 weighting track 15 decrement 30
+interface FastEthernet0/0.20
+ description server vlan 20
+ encapsulation dot1Q 20
+ ip address 10.1.20.1 255.255.255.0
+ glbp 20 ip 10.1.20.254
+ glbp 20 priority 150
+ glbp 20 preempt
+ glbp 20 authentication md5 key-string cisco123
+interface FastEthernet0/0.99
+ description management vlan 99
+ encapsulation dot1Q 99
+ ip address 10.1.99.1 255.255.255.0
+ glbp 99 ip 10.1.99.254
+ glbp 99 priority 150
+ glbp 99 preempt
+ glbp 99 authentication md5 key-string cisco123
+interface FastEthernet1/0
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+interface Ethernet2/0
+ no ip address
+ shutdown
+ half-duplex
+interface Ethernet2/1
+ no ip address
+ shutdown
+ half-duplex
+interface Ethernet2/2
+ no ip address
+ shutdown
+ half-duplex
+interface Ethernet2/3
+ no ip address
+ shutdown
+ half-duplex
+interface Serial3/0
+ no ip address
+ shutdown
+ serial restart-delay 0
+interface Serial3/1
+ no ip address
+ shutdown
+ serial restart-delay 0
+interface Serial3/2
+ ip address 10.1.1.1 255.255.255.0
+ serial restart-delay 0
+interface Serial3/3
+ no ip address
+ shutdown
+ serial restart-delay 0
+router eigrp 1
+ network 10.0.0.0
+ auto-summary
+no ip http server
+ip forward-protocol nd
+no cdp log mismatch duplex
+control-plane
+gatekeeper
+ shutdown
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+line vty 0 4
+ password cisco
+ login
+end
+
+R1#
+R1#
+*Mar  1 04:18:42.810: %TRACKING-5-STATE: 15 interface Se3/2 line-protocol Down->Up
+*Mar  1 04:18:43.014: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial3/2, changed state to up
+R1#
+R1#en
+R1#config ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#interface s3/2
+R1(config-if)#ip address 10.10.1.1 255.255.255.252
+R1(config-if)#no shutdown
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#do wr
+Building configuration...
+[OK]
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#
+R1(config-if)#end
+R1#
+*Mar  1 06:11:27.962: %SYS-5-CONFIG_I: Configured from console by console
+R1#sho ip int i brief
+              ^
+% Invalid input detected at '^' marker.
+
+R1#sho ip int ip brief
+              ^
+% Invalid input detected at '^' marker.
+
+R1#sho ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES unset  up                    up  
+FastEthernet0/0.10         10.1.10.1       YES manual up                    up  
+FastEthernet0/0.20         10.1.20.1       YES manual up                    up  
+FastEthernet0/0.99         10.1.99.1       YES manual up                    up  
+FastEthernet1/0            unassigned      YES unset  administratively down down
+Ethernet2/0                unassigned      YES unset  administratively down down
+Ethernet2/1                unassigned      YES unset  administratively down down
+Ethernet2/2                unassigned      YES unset  administratively down down
+Ethernet2/3                unassigned      YES unset  administratively down down
+Serial3/0                  unassigned      YES unset  administratively down down
+Serial3/1                  unassigned      YES unset  administratively down down
+Serial3/2                  10.10.1.1       YES manual up                    up  
+Serial3/3                  unassigned      YES unset  administratively down down
+R1#
+R1#en
+R1#config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+R1(config)#
+R1(config)#hostname AVF1
+AVF1(config)#inter
+AVF1(config)#interface s3/2
+AVF1(config-if)#ip address 10.1.1.1 255.255.255.252
+AVF1(config-if)#
+AVF1(config-if)#do wr
+Building configuration...
+[OK]
+AVF1(config-if)#
+AVF1(config-if)#end
+AVF1#
+*Mar  1 06:33:05.398: %SYS-5-CONFIG_I: Configured from console by console
+AVF1#
+AVF1#
+AVF1#
+AVF1#show ip int brief
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES unset  up                    up  
+FastEthernet0/0.10         10.1.10.1       YES manual up                    up  
+FastEthernet0/0.20         10.1.20.1       YES manual up                    up  
+FastEthernet0/0.99         10.1.99.1       YES manual up                    up  
+FastEthernet1/0            unassigned      YES unset  administratively down down
+Ethernet2/0                unassigned      YES unset  administratively down down
+Ethernet2/1                unassigned      YES unset  administratively down down
+Ethernet2/2                unassigned      YES unset  administratively down down
+Ethernet2/3                unassigned      YES unset  administratively down down
+Serial3/0                  unassigned      YES unset  administratively down down
+Serial3/1                  unassigned      YES unset  administratively down down
+Serial3/2                  10.1.1.1        YES manual up                    up  
+Serial3/3                  unassigned      YES unset  administratively down down
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#
+AVF1#

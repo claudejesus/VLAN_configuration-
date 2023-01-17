@@ -1,0 +1,420 @@
+UNIX ERR:tcgetattr:Inappropriate ioctl for device
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, Linux Software (I86BI_LINUXL2-ADVIPSERVICESK9-M.2(CML_NIGHTLY_20151103)FLO_DSGS7, EARLY DEPLOYMENT DEVELOPMENT BUI  FLO_DSGS7_POSTCOLLAPSE_TEAM_TRACK_DSGS_PI5
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Wed 04-Nov-15 02:31 by mmen
+This product contains cryptographic features and is subject to Unit
+States and local country laws governing import, export, transfer an
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encrypti
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product
+agree to comply with applicable laws and regulations. If you are un
+to comply with U.S. and local laws, return this product immediately
+
+A summary of U.S. laws governing Cisco cryptographic products may b
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending emai
+export@cisco.com.
+
+Linux Unix (Intel-x86) processor with 158154K bytes of memory.
+Processor board ID 2048003
+16 Ethernet interfaces
+16K bytes of NVRAM.
+
+
+
+Press RETURN to get started!
+
+
+*Nov 11 17:23:34.795: %SPANTREE-5-EXTENDED_SYSID: Extended SysId ene vlan
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/0, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/1, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/2, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/3, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/0, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/1, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/2, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/3, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/0, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/1, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/2, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/3, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/0, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/1, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/2, change
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/3, change
+*Nov 11 17:23:41.793: %SYS-5-LOG_CONFIG_CHANGE: Buffer logging: lev xml disabled, filtering disabled, size (50000)
+*Nov 11 17:23:41.794: %SYS-5-LOG_CONFIG_CHANGE: Console logging: le, xml disabled, filtering disabled, discriminator (EXCESS)
+*Nov 11 17:23:41.834: %SYS-5-CONFIG_I: Configured from memory by co
+*Nov 11 17:23:41.895: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, Linux Software (I86BI_LINUXL2-ADVIPSERVICESK9-M.2(CML_NIGHTLY_20151103)FLO_DSGS7, EARLY DEPLOYMENT DEVELOPMENT BUI  FLO_DSGS7_POSTCOLLAPSE_TEAM_TRACK_DSGS_PI5
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Wed 04-Nov-15 02:31 by mmen
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfa3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interfanged state to down
+*Nov 11 17:23:43.843: %LINK-5-CHANGED: Interface Vlan1, changed statratively down
+IOU3#
+IOU3#en
+IOU3#Confi ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+IOU3(config)#host
+IOU3(config)#hostname DLS2
+DLS2(config)#
+DLS2(config)#interface range e0/0-3
+DLS2(config-if-range)#sw
+DLS2(config-if-range)#switchport trun
+DLS2(config-if-range)#switchport trunk enc
+DLS2(config-if-range)#switchport trunk encapsulation dot
+DLS2(config-if-range)#switchport trunk encapsulation dot1q
+DLS2(config-if-range)#channel
+DLS2(config-if-range)#channel-grou
+DLS2(config-if-range)#channel-group  1 mo
+DLS2(config-if-range)#channel-group  1 mode acti
+DLS2(config-if-range)#channel-group  1 mode active
+Creating a port-channel interface Port-channel 1
+
+DLS2(config-if-range)#
+*Nov 11 19:50:10.524: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/0, changed state to down
+*Nov 11 19:50:10.548: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/1, changed state to down
+DLS2(config-if-range)#no s
+*Nov 11 19:50:17.455: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:50:17.767: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:50:17.861: %EC-5-L3DONTBNDL2: Et0/0 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:50:18.185: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP currently not enabled on the remote port.
+DLS2(config-if-range)#no shu
+DLS2(config-if-range)#ex
+DLS2(config)#vtp mode client
+Setting device to VTP Client mode for VLANS.
+DLS2(config)#
+DLS2(config)#vtp domain glbp
+Changing VTP domain name from NULL to glbp
+DLS2(config)#vtp domain GLBP
+Changing VTP domain name from glbp to GLBP
+DLS2(config)#vtp versoin 2
+                     ^
+% Invalid input detected at '^' marker.
+
+DLS2(config)#vtp version 2
+Cannot modify version in VTP client mode unless the system is in VTP version 3
+DLS2(config)#vtp mode ser
+DLS2(config)#vtp mode server
+Setting device to VTP Server mode for VLANS.
+DLS2(config)#vlan 99
+DLS2(config-vlan)#name management
+DLS2(config-vlan)#vlan 10
+DLS2(config-vlan)#name Office
+DLS2(config-vlan)#vlan 20
+DLS2(config-vlan)#name server
+DLS2(config-vlan)#
+DLS2(config-vlan)#ex
+DLS2(config)#int
+DLS2(config)#interface e0/0
+DLS2(config-if)#sw
+DLS2(config-if)#switchport ac
+DLS2(config-if)#switchport access vlan 10
+DLS2(config-if)#
+*Nov 11 19:55:59.615: %EC-5-CANNOT_BUNDLE2: Et0/0 is not compatible with Et0/1 and will be suspended (access vlan of Et0/0 is 10, Et0/1 is 1)
+DLS2(config-if)#sw
+DLS2(config-if)#switchport host
+*Nov 11 19:56:07.733: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:56:07.760: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:56:08.072: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP currently not enabled on the remote port.
+DLS2(config-if)#switchport host
+switchport mode will be set to access
+spanning-tree portfast will be enabled
+channel group will be disabled
+
+DLS2(config-if)#
+*Nov 11 19:56:16.873: %EC-5-CANNOT_BUNDLE2: Et0/0 is not compatible with Et0/1 and will be suspended (trunk mode of Et0/0 is access, Et0/1 is dynamic)
+*Nov 11 19:56:17.888: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/0, changed state to up
+DLS2(config-if)#
+*Nov 11 19:56:25.200: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:56:25.256: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:56:25.418: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP currently not enabled on the remote port.
+DLS2(config-if)#no shutdown
+DLS2(config-if)#ex
+DLS2(config)#inter
+DLS2(config)#interface e0/1
+DLS2(config-if)#sw
+DLS2(config-if)#switchport trun
+DLS2(config-if)#switchport trunk en
+DLS2(config-if)#switchport trunk encapsulation dot
+DLS2(config-if)#switchport trunk encapsulation dot1q
+DLS2(config-if)#sw
+DLS2(config-if)#switchport mode tr
+DLS2(config-if)#switchport mode trunk
+DLS2(config-if)#no shu
+*Nov 11 19:58:24.534: %EC-5-CANNOT_BUNDLE2: Et0/1 is not compatible with Et0/2 and will be suspended (trunk mode of Et0/1 is trunk, Et0/2 is access)
+DLS2(config-if)#no shutdow
+*Nov 11 19:58:29.368: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP currently not enabled on the remote port.
+*Nov 11 19:58:30.217: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP currently not enabled on the remote port.
+DLS2(config-if)#no shutdown
+DLS2(config-if)# do wr
+Warning: Attempting to overwrite an NVRAM configuration previously written
+by a different version of the system image.
+Overwrite the previous NVRAM configuration?[confirm]
+Building configuration...
+Compressed configuration from 1729 bytes to 1017 bytes[OK]
+DLS2(config-if)#
+DLS2(config-if)#end
+DLS2#
+DLS2#
+DLS2#
+*Nov 11 19:59:48.250: %SYS-5-CONFIG_I: Configured from console by console
+DLS2#
+UNIX ERR:tcgetattr:Inappropriate ioctl for device
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, Linux Software (I86BI_LINUXL2-ADVIPSERVICESK9-M), Version.2(CML_NIGHTLY_20151103)FLO_DSGS7, EARLY DEPLOYMENT DEVELOPMENT BUILD, synced  FLO_DSGS7_POSTCOLLAPSE_TEAM_TRACK_DSGS_PI5
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Wed 04-Nov-15 02:31 by mmen
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Linux Unix (Intel-x86) processor with 158154K bytes of memory.
+Processor board ID 2048003
+16 Ethernet interfaces
+16K bytes of NVRAM.
+
+
+
+Press RETURN to get started!
+
+
+*Nov 11 17:23:34.795: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for e vlan
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/0, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/1, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/2, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet0/3, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/0, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/1, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/2, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet1/3, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/0, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/1, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/2, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet2/3, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/0, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/1, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/2, changed state to
+*Nov 11 17:23:41.755: %LINK-3-UPDOWN: Interface Ethernet3/3, changed state to
+*Nov 11 17:23:41.793: %SYS-5-LOG_CONFIG_CHANGE: Buffer logging: level debuggi xml disabled, filtering disabled, size (50000)
+*Nov 11 17:23:41.794: %SYS-5-LOG_CONFIG_CHANGE: Console logging: level debugg, xml disabled, filtering disabled, discriminator (EXCESS)
+*Nov 11 17:23:41.834: %SYS-5-CONFIG_I: Configured from memory by console
+*Nov 11 17:23:41.895: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, Linux Software (I86BI_LINUXL2-ADVIPSERVICESK9-M), Version.2(CML_NIGHTLY_20151103)FLO_DSGS7, EARLY DEPLOYMENT DEVELOPMENT BUILD, synced  FLO_DSGS7_POSTCOLLAPSE_TEAM_TRACK_DSGS_PI5
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2015 by Cisco Systems, Inc.
+Compiled Wed 04-Nov-15 02:31 by mmen
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne0, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne1, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne2, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Etherne3, changed state to up
+*Nov 11 17:23:42.867: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, nged state to down
+*Nov 11 17:23:43.843: %LINK-5-CHANGED: Interface Vlan1, changed state to admitratively down
+IOU3#
+IOU3#en
+IOU3#Confi ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+IOU3(config)#host
+IOU3(config)#hostname DLS2
+DLS2(config)#
+DLS2(config)#interface range e0/0-3
+DLS2(config-if-range)#sw
+DLS2(config-if-range)#switchport trun
+DLS2(config-if-range)#switchport trunk enc
+DLS2(config-if-range)#switchport trunk encapsulation dot
+DLS2(config-if-range)#switchport trunk encapsulation dot1q
+DLS2(config-if-range)#channel
+DLS2(config-if-range)#channel-grou
+DLS2(config-if-range)#channel-group  1 mo
+DLS2(config-if-range)#channel-group  1 mode acti
+DLS2(config-if-range)#channel-group  1 mode active
+Creating a port-channel interface Port-channel 1
+
+DLS2(config-if-range)#
+*Nov 11 19:50:10.524: %LINEPROTO-5-UPDOWN: Line protocol on Interfa          ce Ethernet0/0, changed state to down
+*Nov 11 19:50:10.548: %LINEPROTO-5-UPDOWN: Line protocol on Interfa          ce Ethernet0/1, changed state to down
+DLS2(config-if-range)#no s
+*Nov 11 19:50:17.455: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:50:17.767: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:50:17.861: %EC-5-L3DONTBNDL2: Et0/0 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:50:18.185: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP curr          ently not enabled on the remote port.
+DLS2(config-if-range)#no shu
+DLS2(config-if-range)#ex
+DLS2(config)#vtp mode client
+Setting device to VTP Client mode for VLANS.
+DLS2(config)#
+DLS2(config)#vtp domain glbp
+Changing VTP domain name from NULL to glbp
+DLS2(config)#vtp domain GLBP
+Changing VTP domain name from glbp to GLBP
+DLS2(config)#vtp versoin 2
+                     ^
+% Invalid input detected at '^' marker.
+
+DLS2(config)#vtp version 2
+Cannot modify version in VTP client mode unless the system is in VT          P version 3
+DLS2(config)#vtp mode ser
+DLS2(config)#vtp mode server
+Setting device to VTP Server mode for VLANS.
+DLS2(config)#vlan 99
+DLS2(config-vlan)#name management
+DLS2(config-vlan)#vlan 10
+DLS2(config-vlan)#name Office
+DLS2(config-vlan)#vlan 20
+DLS2(config-vlan)#name server
+DLS2(config-vlan)#
+DLS2(config-vlan)#ex
+DLS2(config)#int
+DLS2(config)#interface e0/0
+DLS2(config-if)#sw
+DLS2(config-if)#switchport ac
+DLS2(config-if)#switchport access vlan 10
+DLS2(config-if)#
+*Nov 11 19:55:59.615: %EC-5-CANNOT_BUNDLE2: Et0/0 is not compatible           with Et0/1 and will be suspended (access vlan of Et0/0 is 10, Et0/          1 is 1)
+DLS2(config-if)#sw
+DLS2(config-if)#switchport host
+*Nov 11 19:56:07.733: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:56:07.760: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:56:08.072: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP curr          ently not enabled on the remote port.
+DLS2(config-if)#switchport host
+switchport mode will be set to access
+spanning-tree portfast will be enabled
+channel group will be disabled
+
+DLS2(config-if)#
+*Nov 11 19:56:16.873: %EC-5-CANNOT_BUNDLE2: Et0/0 is not compatible           with Et0/1 and will be suspended (trunk mode of Et0/0 is access, E          t0/1 is dynamic)
+*Nov 11 19:56:17.888: %LINEPROTO-5-UPDOWN: Line protocol on Interfa          ce Ethernet0/0, changed state to up
+DLS2(config-if)#
+*Nov 11 19:56:25.200: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:56:25.256: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:56:25.418: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP curr          ently not enabled on the remote port.
+DLS2(config-if)#no shutdown
+DLS2(config-if)#ex
+DLS2(config)#inter
+DLS2(config)#interface e0/1
+DLS2(config-if)#sw
+DLS2(config-if)#switchport trun
+DLS2(config-if)#switchport trunk en
+DLS2(config-if)#switchport trunk encapsulation dot
+DLS2(config-if)#switchport trunk encapsulation dot1q
+DLS2(config-if)#sw
+DLS2(config-if)#switchport mode tr
+DLS2(config-if)#switchport mode trunk
+DLS2(config-if)#no shu
+*Nov 11 19:58:24.534: %EC-5-CANNOT_BUNDLE2: Et0/1 is not compatible           with Et0/2 and will be suspended (trunk mode of Et0/1 is trunk, Et          0/2 is access)
+DLS2(config-if)#no shutdow
+*Nov 11 19:58:29.368: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 19:58:30.217: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP curr          ently not enabled on the remote port.
+DLS2(config-if)#no shutdown
+DLS2(config-if)# do wr
+Warning: Attempting to overwrite an NVRAM configuration previously           written
+by a different version of the system image.
+Overwrite the previous NVRAM configuration?[confirm]
+Building configuration...
+Compressed configuration from 1729 bytes to 1017 bytes[OK]
+DLS2(config-if)#
+DLS2(config-if)#end
+DLS2#
+DLS2#
+DLS2#
+*Nov 11 19:59:48.250: %SYS-5-CONFIG_I: Configured from console by c          onsole
+DLS2#
+*Nov 11 20:12:41.561: %EC-5-COMPATIBLE: Et0/1 is compatible with po          rt-channel members
+*Nov 11 20:12:41.561: %EC-5-CANNOT_BUNDLE2: Et0/2 is not compatible           with Et0/1 and will be suspended (trunk mode of Et0/2 is access, E          t0/1 is trunk)
+DLS2#
+*Nov 11 20:12:50.250: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP curr          ently not enabled on the remote port.
+DLS2#
+*Nov 11 20:12:52.903: %EC-5-L3DONTBNDL2: Et0/3 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 20:12:53.017: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP curr          ently not enabled on the remote port.
+DLS2#
+*Nov 11 20:13:11.640: %LINEPROTO-5-UPDOWN: Line protocol on Interfa          ce Port-channel1, changed state to up
+DLS2#
+*Nov 11 20:13:12.823: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 20:13:13.332: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP curr          ently not enabled on the remote port.
+DLS2#
+*Nov 11 20:17:44.593: %EC-5-CANNOT_BUNDLE2: Et0/3 is not compatible           with Et0/1 and will be suspended (trunk mode of Et0/3 is access, E          t0/1 is trunk)
+DLS2#
+*Nov 11 20:17:46.583: %LINK-3-UPDOWN: Interface Port-channel1, chan          ged state to down
+*Nov 11 20:17:47.583: %LINEPROTO-5-UPDOWN: Line protocol on Interfa          ce Port-channel1, changed state to down
+DLS2#
+*Nov 11 20:17:52.527: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP curr          ently not enabled on the remote port.
+*Nov 11 20:17:52.937: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP curr          ently not enabled on the remote port.
+DLS2#EN
+DLS2#config ter
+Enter configuration commands, one per line.  End with CNTL/Z.
+DLS2(config)#

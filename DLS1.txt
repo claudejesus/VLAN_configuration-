@@ -1,0 +1,190 @@
+DLS1# tcl reset.tcl
+% Ambiguous command:  " tcl reset.tcl"
+DLS1#
+DLS1# tclsh reset.tcl
+couldn't read file "reset.tcl": No such file or directory
+
+DLS1#
+DLS1#en
+DLS1#copy BASE.CFG running-config
+Destination filename [running-config]?
+%Error opening unix:BASE.CFG (No such file or directory)
+DLS1#configure termina
+Enter configuration commands, one per line.  End with CNTL/Z.
+DLS1(config)#interface vlan 99
+DLS1(config-if)#ip address 10.1.99.3 255.255.255.0
+DLS1(config-if)#no shutdown
+DLS1(config-if)#
+DLS1(config-if)#enable secret classs
+DLS1(config)#enable secret class
+DLS1(config)#line vty 0
+% Bad line number - Can't create VTYs
+DLS1(config)#line vty 0 15
+                         ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)# line vty 0
+% Bad line number - Can't create VTYs
+DLS1(config)# line vty 0 4
+% Bad line number - Can't create VTYs
+DLS1(config)#line vty 0 4
+% Bad line number - Can't create VTYs
+DLS1(config)#line vty 0 15
+                         ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#line vty 0 5
+                        ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#interface range fastethernet 0/1-3
+                             ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#interface range fastethernet 0/1-2
+                             ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#interface range fastEthernet 0/1-2
+                             ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#interface range fa 0/1-2
+                             ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#interface range fa0/1-2
+                             ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#interface fa0/1
+                        ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#int fa0/1
+                  ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#
+DLS1(config)#interface range e0/1-2
+DLS1(config-if-range)#interface range e0/1,e0/2,e3/3
+DLS1(config-if-range)#switchpo
+DLS1(config-if-range)#switchport trunk en
+DLS1(config-if-range)#switchport trunk encapsulation dot1q
+DLS1(config-if-range)#swit
+DLS1(config-if-range)#switchport mo
+DLS1(config-if-range)#switchport mode tr
+DLS1(config-if-range)#switchport mode trunk
+DLS1(config-if-range)#
+*Nov 11 18:49:27.123: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/
+3, changed state to down
+DLS1(config-if-range)#ch
+DLS1(config-if-range)#channel-
+*Nov 11 18:49:30.277: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/
+3, changed state to up
+DLS1(config-if-range)#channel-g
+DLS1(config-if-range)#channel-group 1 mode
+DLS1(config-if-range)#channel-group 1 mode acti
+DLS1(config-if-range)#channel-group 1 mode active
+Creating a port-channel interface Port-channel 1
+
+DLS1(config-if-range)#
+*Nov 11 18:49:49.845: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/
+1, changed state to down
+*Nov 11 18:49:49.846: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/
+2, changed state to down
+*Nov 11 18:49:49.846: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/
+3, changed state to down
+DLS1(config-if-range)#n
+*Nov 11 18:49:51.132: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/
+1, changed state to up
+DLS1(config-if-range)#no
+*Nov 11 18:49:54.391: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/
+2, changed state to up
+DLS1(config-if-range)#no
+*Nov 11 18:49:56.932: %EC-5-L3DONTBNDL2: Et3/3 suspended: LACP currently not ena
+bled on the remote port.
+*Nov 11 18:49:57.338: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP currently not ena
+bled on the remote port.
+*Nov 11 18:49:57.607: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP currently not ena
+bled on the remote port.
+DLS1(config-if-range)#no shutd
+DLS1(config-if-range)#no shutdown
+DLS1(config-if-range)#exi
+DLS1(config)#vty domain GLBP
+               ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)#vty domain GLBP
+               ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)# vty domain GLBP
+                ^
+% Invalid input detected at '^' marker.
+
+DLS1(config)# vtp domain GLBP
+Changing VTP domain name from NULL to GLBP
+DLS1(config)#vtp version 2
+DLS1(config)#vtp mode server
+Device mode already VTP Server for VLANS.
+DLS1(config)#vlan 99
+DLS1(config-vlan)# name Management
+DLS1(config-vlan)# vlan 10
+DLS1(config-vlan)#name Office
+DLS1(config-vlan)#vlan 20
+DLS1(config-vlan)#name Server
+DLS1(config-vlan)#exit
+DLS1(config)#interface e3/3
+DLS1(config-if)#sw
+DLS1(config-if)#switchport acc
+DLS1(config-if)#switchport access vlan 10
+DLS1(config-if)#sw
+DLS1(config-if)#switchport host
+switchport mode will be set to access
+spanning-tree portfast will be enabled
+channel group will be disabled
+
+DLS1(config-if)#
+*Nov 11 19:00:46.474: %EC-5-L3DONTBNDL2: Et3/3 suspended: LACP currently not ena
+bled on the remote port.
+*Nov 11 19:00:46.601: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP currently not ena
+bled on the remote port.
+*Nov 11 19:00:47.039: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP currently not ena
+bled on the remote port.
+*Nov 11 19:00:47.173: %EC-5-CANNOT_BUNDLE2: Et3/3 is not compatible with Et0/1 a
+nd will be suspended (dtp mode of Et3/3 is off, Et0/1 is on)
+DLS1(config-if)#
+*Nov 11 19:00:48.201: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet3/
+3, changed state to up
+DLS1(config-if)#
+*Nov 11 19:00:55.143: %EC-5-L3DONTBNDL2: Et0/1 suspended: LACP currently not ena
+bled on the remote port.
+*Nov 11 19:00:55.583: %EC-5-L3DONTBNDL2: Et0/2 suspended: LACP currently not ena
+bled on the remote port.
+DLS1(config-if)#no shutdown
+DLS1(config-if)#interface e0/0
+DLS1(config-if)#sw
+DLS1(config-if)#switchport trun
+DLS1(config-if)#switchport trunk en
+DLS1(config-if)#switchport trunk encapsulation do
+DLS1(config-if)#switchport trunk encapsulation dot1q
+DLS1(config-if)#sw
+DLS1(config-if)#switchport m
+DLS1(config-if)#switchport mode tr
+DLS1(config-if)#switchport mode trunk
+DLS1(config-if)#no
+*Nov 11 19:02:33.961: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/
+0, changed state to down
+DLS1(config-if)#no sh
+*Nov 11 19:02:36.966: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/
+0, changed state to up
+DLS1(config-if)#no shutdown
+DLS1(config-if)#
+*Nov 11 19:03:07.961: %LINK-3-UPDOWN: Interface Vlan99, changed state to up
+*Nov 11 19:03:08.968: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan99, ch
+anged state to up
+DLS1(config-if)#end
+DLS1#
+*Nov 11 19:40:38.579: %SYS-5-CONFIG_I: Configured from console by console
+DLS1#
